@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { Card } from "/components/Card";
+import { Card } from "../../components/Card";
 import { fetchAPI } from "/lib/api";
 
 export const getStaticProps = async () => {
