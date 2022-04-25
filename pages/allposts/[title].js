@@ -33,7 +33,6 @@ export async function getStaticProps({ params }) {
 
 
 const Details = ({ learn }) => {
-    console.log(learn)
     return (
         <div>
             {learn.map(data => (

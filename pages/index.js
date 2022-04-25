@@ -20,7 +20,9 @@ export default function Home() {
           Id aliquip excepteur cillum proident culpa enim esse commodo. Proident aute laborum veniam irure ex ea est eiusmod cupidatat dolor anim cillum tempor. Consequat laborum voluptate eu proident laborum ex est consectetur mollit anim sint. Sint occaecat est ut et aute. Quis quis Lorem sunt sit ex est nostrud. Eu cillum nulla officia dolor.
         </p>
         <Link href="/allposts">
-          <a className="block w-[150px] py-2 my-5 mx-auto text-center bg-blue-600 rounded text-white hover:bg-blue-700">See all post</a>
+          <a className="block w-[150px] py-2 my-5 mx-auto text-center bg-blue-600 rounded text-white hover:bg-blue-700 ">
+            See all post
+          </a>
         </Link>
       </div>
     </>
