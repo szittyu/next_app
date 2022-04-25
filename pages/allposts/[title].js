@@ -1,3 +1,4 @@
+import React from "react";
 import { fetchAPI } from "../../lib/api";
 import CardDetails from "../../components/CardDetails"
 
