@@ -1,7 +1,6 @@
 import React from "react"
 import Head from "next/head";
 import { getStrapiMedia } from "/lib/media";
-
 import CardDetailsMain from "./CardDetailsMain"
 
 const CardDetails = ({ data }) => {

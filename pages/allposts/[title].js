@@ -6,7 +6,6 @@ export async function getStaticPaths() {
 
     const res = await fetchAPI("/learns", { fields: ["title"] });
 
-
     return {
         paths: res.map((a) => ({
             params: {
@@ -17,6 +16,7 @@ export async function getStaticPaths() {
     };
 
 }
+
 export async function getStaticProps({ params }) {
 
     const learnRes = await fetchAPI("/learns", {
@@ -33,7 +33,6 @@ export async function getStaticProps({ params }) {
 
 
 const Details = ({ learn }) => {
-
     return (
         <div>
             {learn.map(data => (

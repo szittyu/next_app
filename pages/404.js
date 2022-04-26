@@ -8,7 +8,7 @@ const NotFound = () => {
     useEffect(() => {
         setTimeout(() => {
             router.push("/")
-        }, 3000)
+        }, 5000)
     }, [router])
 
     return (
@@ -24,6 +24,7 @@ const NotFound = () => {
                 <h2 className="text-2xl my-4">
                     That page cannot be found.
                 </h2>
+                <p>You will be redirected to the Homepage in 5 seconds...</p>
                 <p className="mb-4">
                     Go back to the&nbsp;
                     <Link href="/">
