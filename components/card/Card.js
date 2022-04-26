@@ -15,7 +15,7 @@ export const Card = ({ data }) => {
                 image={image}
             />
             <CardDetailsBody
-                body={body.substring(0, 100)}
+                body={body.substring(0, 150)}
             />
             <CardDetailsDate
                 publishedAt={publishedAt}
