@@ -1,10 +1,11 @@
 import React from "react"
 import Head from "next/head";
+import { getStrapiMedia } from "/lib/media";
 
 import CardDetailsMain from "./CardDetailsMain"
 
 const CardDetails = ({ data }) => {
-
+    const image = getStrapiMedia(data.icon)
     return (
         <>
             <Head>
@@ -13,6 +14,7 @@ const CardDetails = ({ data }) => {
             </Head>
             <CardDetailsMain
                 data={data}
+                image={image}
             />
         </>
     );

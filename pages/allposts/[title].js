@@ -33,12 +33,14 @@ export async function getStaticProps({ params }) {
 
 
 const Details = ({ learn }) => {
+
     return (
         <div>
             {learn.map(data => (
                 <CardDetails
                     key={data.attributes.title}
                     data={data.attributes}
+
                 />
             ))}
         </div>
