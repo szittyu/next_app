@@ -25,7 +25,7 @@ export default function Home() {
         <Link href="/allposts">
           <a
             className="block w-[150px] py-2 mt-5 mx-auto text-center bg-blue-600 rounded text-white hover:bg-blue-700"
-            role="allposts"
+            role="allposts-btn"
           >
             See all post
           </a>

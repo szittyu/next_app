@@ -17,7 +17,10 @@ const NotFound = () => {
                 <title>Learning blog | 404</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="text-center text-gray-600">
+            <div
+                className="text-center text-gray-600"
+                role="404"
+            >
                 <h1 className="text-3xl font-medium">
                     Oooops...
                 </h1>

@@ -8,7 +8,10 @@ const About = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-                <h1 className="text-center text-gray-600 text-4xl mb-10 font-medium">
+                <h1
+                    className="text-center text-gray-600 text-4xl mb-10 font-medium"
+                    role="about"
+                >
                     About me
                 </h1>
             </div>

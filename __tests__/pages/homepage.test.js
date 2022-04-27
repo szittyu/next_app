@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import Home from '../pages/index'
+import Home from '../../pages/index'
 
 describe('Homepage', () => {
     it('renders a heading', () => {
@@ -16,7 +16,7 @@ describe('Homepage', () => {
     it('renders link button', () => {
         render(<Home />)
 
-        const linkButton = screen.getByRole("allposts")
+        const linkButton = screen.getByRole("allposts-btn")
 
         expect(linkButton).toBeInTheDocument()
     })

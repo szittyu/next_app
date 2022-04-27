@@ -6,7 +6,7 @@ import CardDetailsTitle from "./CardDetailsTitle";
 
 const CardDetailsMain = ({ data, image }) => {
     return (
-        <div className="m-10 border-l-8 bg-blue-600/10 border-solid py-4 px-8 bg-white border-blue-600 rounded-lg drop-shadow-2xl">
+        <div className="m-10 border-l-8 bg-blue-600/[.10] border-solid py-4 px-8 bg-white border-blue-600 rounded-lg drop-shadow-2xl">
             <CardDetailsTitle
                 title={data.title}
                 image={image}
