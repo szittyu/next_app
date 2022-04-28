@@ -1,10 +1,23 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import AllPost from '../../pages/allposts/index'
+import { dummyCardData } from '../../__mocks__/dummyCardData'
+
+jest.mock("next/router", () => ({
+    useRouter() {
+        return {
+            route: "/",
+            pathname: "",
+            query: "",
+            asPath: "",
+        };
+    },
+}));
+
 
 describe('AllPosts page', () => {
     it('renders a heading', () => {
-        render(<AllPost />)
+        render(<AllPost learn={dummyCardData} />)
 
         const heading = screen.getByRole("header")
 
@@ -14,7 +27,7 @@ describe('AllPosts page', () => {
 
 describe('AllPost page', () => {
     it('renders allposts div', () => {
-        render(<AllPost />)
+        render(<AllPost learn={dummyCardData} />)
 
         const allpostDiv = screen.getByRole("allposts")
 

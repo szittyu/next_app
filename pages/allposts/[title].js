@@ -1,5 +1,5 @@
 import React from "react";
-import { fetchAPI } from "/lib/api";
+import { fetchAPI } from "../../lib/api";
 import CardDetails from "/components/card/CardDetails"
 
 export async function getStaticPaths() {
