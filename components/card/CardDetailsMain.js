@@ -1,5 +1,4 @@
 import React from "react";
-
 import CardDetailsBody from "./CardDetailsBody";
 import CardDetailsSecondary from "./CardDetailsSecondary";
 import CardDetailsTitle from "./CardDetailsTitle";

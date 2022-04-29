@@ -1,6 +1,6 @@
 import React from "react";
 import { fetchAPI } from "../../lib/api";
-import CardDetails from "/components/card/CardDetails"
+import CardDetails from "../../components/card/CardDetails"
 
 export async function getStaticPaths() {
 
@@ -34,7 +34,7 @@ export async function getStaticProps({ params }) {
 
 const Details = ({ learn }) => {
     return (
-        <div>
+        <div role="details">
             {learn.map(data => (
                 <CardDetails
                     key={data.attributes.title}
