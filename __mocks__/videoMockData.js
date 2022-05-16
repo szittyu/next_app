@@ -1,5 +1,6 @@
 export const videoMockData =
 {
+    id: 1,
     attributes: {
         publishedAt: "2022-05-16T14:20:54.538Z",
         createdAt: "2022-05-16T14:20:54.538Z",

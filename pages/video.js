@@ -14,19 +14,21 @@ export async function getStaticProps() {
 }
 
 const Video = ({ data }) => {
-    const { video } = data.attributes
-    const coverVideo = getStrapiMedia(video)
+    const coverVideo = getStrapiMedia(data.attributes.video)
     return (
-        <>
+        <div
+            role="video"
+        >
             <Head>
                 <title>Learning blog | Video</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div
-                role="video"
+                data-testid={"video"}
             >
                 <h1
                     className="text-center text-gray-600 text-4xl mb-10 font-medium"
+                    role="header"
                 >
                     Video
                 </h1>
@@ -34,7 +36,7 @@ const Video = ({ data }) => {
                     cover={coverVideo}
                 />
             </div>
-        </>
+        </div>
     );
 }
 
