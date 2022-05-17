@@ -1,13 +1,17 @@
-import React from "react"
-import Layout from '../components/Layout'
+import React, { useEffect } from "react"
 import '../styles/globals.css'
+import { Provider, useDispatch } from "react-redux";
+import store from "../redux/store"
+import Layout from '../components/Layout'
 
-function MyApp({ Component, pageProps }) {
+
+export default function MyApp({ Component, pageProps }) {
+
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Provider store={store}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
   )
 }
-
-export default MyApp

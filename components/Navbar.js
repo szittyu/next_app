@@ -12,10 +12,11 @@ const Navbar = () => {
                     <Image src="/blog.png" width={128} height={110} alt={"blog"} />
                 </a>
             </Link>
-            <div className="flex justify-between ml-3 w-56 text-gray-600 font-medium">
+            <div className="flex justify-between ml-3 w-2/5 text-gray-600 font-medium">
                 <Link href="/"><a className="hover:text-blue-600">Home</a></Link>
                 <Link href="/about"><a className="hover:text-blue-600">About</a></Link>
                 <Link href="/video"><a className="hover:text-blue-600">Video</a></Link>
+                <Link href="/redux"><a className="hover:text-blue-600">Redux</a></Link>
                 <Link href="/allposts"><a className="hover:text-blue-600">All post</a></Link>
             </div>
         </nav>

@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["localhost"],
+    domains: ["localhost", "rickandmortyapi.com"],
+    formats: ['image/avif', 'image/webp'],
   },
 }
 
