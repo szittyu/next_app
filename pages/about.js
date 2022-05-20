@@ -1,6 +1,9 @@
 import Head from "next/head";
+import { useSelector } from "react-redux";
 
 const About = () => {
+    const characters = useSelector((state) => state.character)
+    console.log(characters)
     return (
         <>
             <Head>

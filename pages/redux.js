@@ -1,17 +1,10 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Head from "next/head";
-import { useSelector, useDispatch } from "react-redux";
-import { getCharacter } from "../redux/ducks/character";
+import { useSelector } from "react-redux";
 import Characters from "@/components/reduxComponents/Characters";
 
 const Redux = () => {
-    const characters = useSelector((state) => state.character.character)
-    console.log(characters)
-    const dispatch = useDispatch()
-
-    useEffect(() => {
-        dispatch(getCharacter())
-    }, [dispatch])
+    const characters = useSelector((state) => state.character)
     return (
         <div
             role="redux"

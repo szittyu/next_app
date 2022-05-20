@@ -1,8 +1,18 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Link from "next/link"
 import Head from "next/head"
+import { useDispatch, useSelector } from "react-redux";
+import { getCharacter } from "../redux/ducks/characterSlice";
 
 export default function Home() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getCharacter())
+  }, [dispatch])
+
+  const characters = useSelector((state) => state.character)
+  console.log(characters)
   return (
     <>
       <Head>
@@ -27,7 +37,7 @@ export default function Home() {
             className="block w-[150px] py-2 mt-5 mx-auto text-center bg-blue-600 rounded text-white hover:bg-blue-700"
             role="allposts-btn"
           >
-            See all post
+            See all posts
           </a>
         </Link>
       </div>

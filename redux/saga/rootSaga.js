@@ -1,7 +1,7 @@
-import { takeEvery } from "redux-saga/effects"
+import { takeLatest } from "redux-saga/effects"
 import { handleGetCharacter } from "./handlers/character"
-import { GET_CHARACTER } from "../ducks/character"
+import { getCharacter } from "../ducks/characterSlice"
 
 export function* watcherSaga() {
-    yield takeEvery(GET_CHARACTER, handleGetCharacter)
+    yield takeLatest(getCharacter.type, handleGetCharacter)
 }
