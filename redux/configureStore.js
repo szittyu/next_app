@@ -19,11 +19,11 @@ if (devMode) {
     middleware = (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(sagaMiddleware).concat(logger)
 }
+sagaMiddleware.run(watcherSaga)
 const store = configureStore({
     reducer,
     middleware
 })
 
-sagaMiddleware.run(watcherSaga)
 
 export default store;
