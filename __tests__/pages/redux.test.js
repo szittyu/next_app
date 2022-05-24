@@ -8,7 +8,7 @@ import * as redux from 'react-redux'
 const spy = jest.spyOn(redux, 'useSelector')
 spy.mockReturnValue({ username: 'test' })
 
-describe('Video', () => {
+describe('Redux', () => {
     it('renders h1 from video page', () => {
         render(<Redux char={charactersMockData} />)
 
@@ -18,7 +18,7 @@ describe('Video', () => {
     })
 })
 
-describe("Video", () => {
+describe("Redux", () => {
     it("renders div from video page", () => {
         const { getByTestId } = render(
             <Redux char={charactersMockData} />

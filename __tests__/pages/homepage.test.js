@@ -2,6 +2,7 @@ import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import Home from '../../pages/index'
 
+
 describe('Homepage', () => {
     it('renders a heading', () => {
         render(<Home />)

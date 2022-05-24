@@ -2,7 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const characterSlice = createSlice({
     name: "character",
-    initialState: {},
+    initialState: {
+        info: {},
+        results: []
+    },
     reducers: {
         getCharacter() { },
         setCharacter(state, action) {

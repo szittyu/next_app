@@ -1,17 +1,20 @@
 import React, { useEffect } from "react"
+// import { useRouter } from 'next/router'
 import Link from "next/link"
 import Head from "next/head"
 import { useDispatch, useSelector } from "react-redux";
 import { getCharacter } from "../redux/ducks/characterSlice";
 
 export default function Home() {
+  // const router = useRouter()
+  // console.log(router.asPath)
+  const characters = useSelector((state) => state.character)
   const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(getCharacter())
   }, [dispatch])
 
-  const characters = useSelector((state) => state.character)
   console.log(characters)
   return (
     <>

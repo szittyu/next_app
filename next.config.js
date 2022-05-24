@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["localhost", "rickandmortyapi.com"],
+    domains: ["localhost", "rickandmortyapi.com", "strapi-app-next.herokuapp.com"],
     formats: ['image/avif', 'image/webp'],
   },
 }
