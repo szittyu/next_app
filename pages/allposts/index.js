@@ -15,6 +15,7 @@ export async function getStaticProps() {
 
 
 const AllPost = ({ learn }) => {
+
     return (
         <>
             <Head>

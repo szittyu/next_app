@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export function requestGetCharacter() {
+export function getAllCharacters() {
     return axios.request({
         method: "get",
         url: "https://rickandmortyapi.com/api/character"

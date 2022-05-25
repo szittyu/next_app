@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import Characters from "@/components/reduxComponents/Characters";
 
 const Redux = () => {
-    const characters = useSelector((state) => state.character)
+    const characters = useSelector((state) => state.characters.data)
     return (
         <div
             role="redux"
