@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom'
-import { getStrapiMedia } from "../../lib/media"
+import { getStrapiMedia } from "../../lib/mediaVideo"
 import { apiMedia } from '../../__mocks__/apiMedia'
 
 test('calculates order total', () => {

@@ -1,8 +1,9 @@
 import React from "react"
 import Head from "next/head";
+import ReactPlayer from "react-player"
 import { VideoComponent } from "../components/VideoComponent";
 import { fetchAPI } from "../lib/api";
-import { getStrapiMedia } from "../lib/media";
+import { getStrapiMediaVideo } from "../lib/mediaVideo";
 
 export async function getStaticProps() {
 
@@ -14,7 +15,8 @@ export async function getStaticProps() {
 }
 
 const Video = ({ data }) => {
-    const coverVideo = getStrapiMedia(data.attributes.video)
+    const coverVideo = getStrapiMediaVideo(data.attributes.video.data[0])
+    console.log(coverVideo)
     return (
         <div
             role="video"
@@ -32,9 +34,11 @@ const Video = ({ data }) => {
                 >
                     Video
                 </h1>
-                <VideoComponent
-                    cover={coverVideo}
-                />
+
+                <ReactPlayer controls url={coverVideo} />
+                {/* <VideoComponent
+                    cover="https://res.cloudinary.com/djham8flr/video/upload/v1654185862/odyssey_02_c549f3388b.mp4"
+                /> */}
             </div>
         </div>
     );
